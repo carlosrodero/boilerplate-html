@@ -1,6 +1,6 @@
-# Basic Front Boilerplate (BFB)
+# Boilerplate HTML
 
-Boilerplate básico para projetos front-end com ênfase em HTML e CSS.
+Boilerplate básico para projetos em HTML/CSS.
 
 ## Pré-requisitos
 

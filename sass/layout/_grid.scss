@@ -1,0 +1,31 @@
+.container {
+  max-width: $global-max-width;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat($global-columns-container, 1fr);
+}
+
+@for $i from 1 through $global-columns-container {
+  .span#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+@include breakpoint(medium-only) {
+  @for $i from 1 through $global-columns-container {
+    .m-span#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@include breakpoint(small-only) {
+  @for $i from 1 through $global-columns-container {
+    .s-span#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
